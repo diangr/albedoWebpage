@@ -1,0 +1,321 @@
+/* Global CSS */
+body {
+    font-family: $montserrat;
+    font-size: 14px;
+    color: $default;
+}
+
+h1 {
+    font-size: 46px;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+h3 {
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 45px;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-family: $leckerli;
+    font-size: 35px;
+    line-height: 38px;
+}
+
+h6 {
+    font-size: 16px;
+    line-height: 26px;
+    color: #73828b;
+}
+
+.desc {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.6px;
+}
+
+.desc-hero {
+    color: $gray-text;
+}
+
+/* Style CSS */
+#header {
+    background-image: $bg-header;
+    background-position-x: -100px;
+    background-position-y: -130px;
+    background-size: 2000px;
+    height: 950px;
+    font-family: $montserrat;
+}
+
+.highlight {
+    background-color: rgba(37, 37, 37, 0.6);
+    height: 100%;
+}
+
+#top-nav {
+    padding-top: 30px;
+
+    nav {
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    
+        li { display: inline-block; }
+        a {
+            display: block;
+            padding: 6px 12px;
+            text-decoration: none;
+            font-size: 16px;
+            color: $default;
+        }
+        a.active { color: $active; }
+        a:hover{ color: $active; }
+    }
+}
+
+.btn {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.btn-outline-warning {
+    @extend .btn;
+
+    border: 2px solid $btn-yellow;
+    border-radius: 25px;
+    padding: 10px 40px;
+    color: $btn-yellow;
+    box-shadow: 0px 10px 30px 0px rgba(254, 200, 22, 0.2);
+}
+
+.btn-dark{
+    @extend .btn;
+
+    border: none;
+    border-radius: 50px;
+    padding: 3px 35px;
+    margin-top: 5px;
+    line-height: 50px;
+    background-color: #2b2b2b;
+}
+
+#hero-header {
+    margin-top: 250px;
+}
+
+.name {
+    color: $blue;
+}
+
+#about-desc {
+    background-color: $blue;
+    padding: 120px 0 35px;
+}
+
+#about-job {
+    background-color: $bg-blue-2;
+    padding: 70px 0 10px;
+
+    .media img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.desc-about-1 {
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 52px;
+    letter-spacing: 0.5px;
+}
+
+.desc-about-2 {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+}
+
+.title-job {
+    font-family: $montserrat;
+    font-size: 23px;
+    font-weight: 900;
+    line-height: 30px;
+    margin-bottom: 16px;
+}
+
+#social-media {
+    background-color: $blue;
+    padding: 70px 0 80px;
+
+    p a {
+        font-size: 25px;
+        margin-right: 25px;
+        color: #4ba6fd;
+    }
+}
+
+.fa:hover {
+    color: $default;
+}
+
+.fa-twitter {
+    color: $default;
+}
+
+#head-portofolio {
+    padding: 90px 0 50px;
+
+    h4 {
+        color: $silver-text;
+    }
+
+    h2 {
+        color: $black-text;
+    }
+
+    button {
+        @extend .btn;
+
+        font-size: 12px;
+        border: 1px solid $btn-bluesky;
+        border-radius: 25px;
+        background-color: $btn-bluesky;
+        padding: 15px 50px;
+        color: $default;
+        box-shadow: 0px 10px 30px 0px rgba(22, 246, 254, 0.322);      
+    }
+}
+
+#gallery-portofolio {
+    .no-gutters {
+        overflow: hidden;
+    }
+
+    .ts-1 {
+        transform: scale(1.6);
+        width: 100%;
+        height: 350px;
+    }
+
+    .ts-2 {
+        width: 100%;
+        height: 570px;
+        transform: scaleX(1.7);
+    }
+
+    .ts-3 {
+        width: 100%;
+        height: 220px;
+        transform: scale(3);
+        margin-left: 90px;
+    }
+
+    .ts-4 {
+        height: 400px;
+        width: 100%;
+        transform: scaleX(1.3) scaleY(1);
+        margin-top: -30px;
+    }
+
+    .ts-5 {
+        width: 100%;
+        height: 220px;
+    }    
+
+    .ts-6 {
+        width: 100%;
+        height: 220px;
+        margin-top: -20px;
+    }
+
+    .overlay {
+        background-color: rgba(55, 64, 71, 0.8);
+        padding: 50px 60px;
+        opacity: 0; 
+    
+        .title-overlay {
+            font-size: 12px;
+            color: $silver-text;
+        }
+        .desc-overlay {
+            font-size: 15px;
+            font-weight: 700;
+        }
+        img{
+            height: 20px;
+            width: 20px;
+        }
+    }
+    .overlay:hover {
+        opacity: 1;
+        transition: 0.3s ease;
+    }
+    
+    .overlay-active {
+        opacity: 1;
+    }
+}
+
+#client {
+    background-image: $bg-client;
+    background-repeat: no-repeat;
+    background-position-x: -1500px;
+    background-position-y: -800px;
+
+    .highlight {
+        padding: 200px 0px;
+        background-color: rgba(37, 37, 37, 0.767);
+    }
+
+    .brand {
+        margin-top: 100px;
+
+        img {
+            width: 70%;
+        }
+    }
+
+    .testimonials p{
+        font-family: $coustard;
+        font-size: 20px;
+        margin: 0 20%;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: auto;
+    }
+
+    span img {
+        height: 25px;
+    }
+
+    .client-pic {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 100%;
+        object-position: center;
+    }
+
+    .client-name {
+        font-weight: 700;
+        color: $btn-yellow;
+    }
+
+    .client-job {
+        font-size: 14px;
+        color: $silver-text;
+    }
+}
+
